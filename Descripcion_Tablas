@@ -1,0 +1,35 @@
+# Detalle de las tablas
+
+Esta base de datos está formada por varias tablas que trabajan juntas para almacenar y organizar la información de la plataforma de música. En donde:
+## Artistas
+Esta tabla guarda la información básica de los artistas, como su nombre y género musical.
+- **id_artista**: Un número único que identifica a cada artista. (INT, clave primaria)
+- **nombre**: El nombre del artista. (VARCHAR(100))
+- **genero**: El género musical principal del artista. (VARCHAR(50))
+
+## Álbumes
+Aquí se registran los álbumes creados por los artistas.
+- **id_album**: Un identificador único para cada álbum. (INT, clave primaria)
+- **titulo**: El título del álbum. (VARCHAR(150))
+- **anio**: El año en que se lanzó el álbum. (INT)
+- **id_artista**: Identifica al artista que creó el álbum. (INT, clave foránea)
+
+## Canciones
+Esta tabla almacena las canciones disponibles en la base de datos, incluyendo su título, duración y el álbum al que pertenecen.
+- **id_cancion**: Identificador único para cada canción. (INT, clave primaria)
+- **titulo**: El nombre de la canción. (VARCHAR(200))
+- **id_album**: Relación con el álbum al que pertenece la canción. (INT, clave foránea)
+- **duracion_ms**: Duración de la canción en milisegundos. (INT)
+
+## Características
+Contiene información técnica de las canciones, como su nivel de energía o qué tan bailable es.
+- **id_cancion**: Relación con la canción correspondiente. (INT, clave foránea)
+- **energia**: Qué tan energética es la canción. (DECIMAL(3,2))
+- **bailabilidad**: Indica qué tan fácil es bailar esta canción. (DECIMAL(3,2))
+- **instrumentalidad**: Mide si la canción es principalmente instrumental. (DECIMAL(3,2))
+
+## Popularidad
+Esta tabla lleva un registro de qué tan popular es cada canción, basándose en reproducciones y un índice de popularidad.
+- **id_cancion**: Relación con la canción correspondiente. (INT, clave foránea)
+- **popularidad**: Un índice de 0 a 100 que indica qué tan popular es la canción. (INT)
+- **reproducciones**: El número total de veces que se ha reproducido la canción. (BIGINT)
