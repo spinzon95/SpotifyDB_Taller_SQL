@@ -1,0 +1,16 @@
+# Descripción
+
+Esta DB, fue tomada de Kaggle en donde donde se encuentra información la plataforma de streaming musical Spotify. El sistema permite registrar y analizar datos sobre canciones, artistas, álbumes, géneros musicales y métricas de popularidad.
+
+## Propósito de la base de datos
+1. Almacenar información detallada sobre canciones, incluyendo características técnicas (duración, energía, etc.) y metadatos como artistas, álbumes y géneros.
+2. Facilitar el análisis de la popularidad de canciones y artistas.
+3. Proveer información para la creación de playlists personalizadas y recomendaciones musicales.
+4. Optimizar la experiencia del usuario al registrar datos relevantes sobre canciones y su desempeño.
+
+## Componentes principales (Componentes a usar en el taller)
+- **Artistas**: Tabla para almacenar información de los artistas.
+- **Álbumes**: Tabla que almacena información de los álbumes musicales.
+- **Canciones**: Tabla que incluye las canciones, relacionadas con un álbum y un artista.
+- **Características de Canciones**: Incluye métricas como bailabilidad, energía, y valencia para análisis musical.
+- **Popularidad**: Permite realizar estudios basados en el desempeño de las canciones.
