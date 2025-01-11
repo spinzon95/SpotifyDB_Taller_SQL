@@ -1,0 +1,13 @@
+# SpotifyDB Taller SQL
+
+Este repositorio contiene el desarrollo de un taller de SQL basado en un sistema de streaming musical similar a Spotify.
+
+## Contenido
+- **Descripción del sistema**: Información sobre la base de datos y su propósito.
+- **Diagrama ERD**: Representación visual del modelo de datos (archivo `Improved_ERD_Spotify_Like.png`).
+- **Script SQL**: Archivo con las instrucciones para crear la base de datos y realizar operaciones básicas.
+
+## Instrucciones
+1. Clona este repositorio en tu computadora usando:
+   ```bash
+   git clone https://github.com/tu-usuario/SpotifyDB_Taller_SQL.git
